@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Roleta</title>
+    <link rel="stylesheet" href="css/dayNight.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* body {
+            margin: 0;
+        }
+
+        canvas {
+            
+            display: block;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <div class="canvas" id="myCanvas">
+        <div class="cloud"></div>
+        <div class="cloud a"></div>
+        <div class="cloud b"></div>
+        <div class="cloud c"></div>
+        <div class="cloud d"></div>
+        <div class="land">
+            <div class="tree"></div>
+            <div class="tree a"></div>
+            <div class="tree b"></div>
+            <div class="tree c"></div>
+            <div class="tree d"></div>
+            <div class="tree e"></div>
+            <div class="tree f"></div>
+        </div>
+        <div class="star"></div>
+        <div class="star a"></div>
+        <div class="star b"></div>
+        <div class="star c"></div>
+        <div class="star d"></div>
+        <div class="wind"></div>
+    <!-- <div class="swirly-wind">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="swirly-wind a"></div>
+    <div class="swirly-wind b"></div> -->
+        <div class="eclipse">
+            <div class="sun"></div>
+            <div class="sun a"></div>
+            <div class="moon"></div>
+            <div class="moon a"></div>
+        </div>
+    </div>
+    <div id="question">
+        <h1></h1>
+    </div>
+    <div class="container">
+        <div class="panel">
+            <input type="text" id="questionInput" placeholder="Digite uma pergunta...">
+            <button id="addQuestionBtn">Adicionar Pergunta</button>
+            <ul id="questionList"></ul>
+        </div>
+        <div id="chart"></div>
+    </div>
+
+    
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Obtém o elemento canvas e seu contexto
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Ajusta o tamanho do canvas para preencher toda a janela
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Desenha um fundo simples para verificar o tamanho do canvas
+        ctx.fillStyle = 'skyblue';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Ajusta o tamanho do canvas quando a janela for redimensionada
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            // Redesenha o fundo após o redimensionamento
+            ctx.fillStyle = 'skyblue';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        });
+    </script>
+</body>
+
+</html>
