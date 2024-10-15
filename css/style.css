@@ -17,7 +17,7 @@ body {
 
 .container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 300px;
 }
@@ -93,6 +93,10 @@ text{
     cursor: pointer;
     flex-grow: 1;
     flex-shrink: 3;
+}
+
+#img-casa-aberta{
+    width: 500px;
 }
 
 #chart {
