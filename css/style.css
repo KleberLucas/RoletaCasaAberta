@@ -118,7 +118,7 @@ text{
 #question {
     position: absolute;
     top: 5%;
-    
+    margin-bottom: 100px;
 } 
 
 #question h1 {
@@ -182,13 +182,13 @@ text{
 
 @media (max-width: 1300px){
     .container {
-        gap: 50px;
+        /* //gap: 50px; */
     }
 }
 
 @media (max-height: 749px){
     .container{
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
 }
