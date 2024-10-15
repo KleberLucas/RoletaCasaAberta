@@ -156,7 +156,7 @@ container.append("text")
     .attr("y", 15)
     .attr("text-anchor", "middle")
     .text("GIRAR")
-    .style({ "font-weight": "bold", "font-size": "30px" });
+    .style({ "font-weight": "bold", "font-size": "30px", "user-select" : "none" , "cursor": "pointer" });
 
 // Função de interpolação para a rotação suave da roleta
 function rotTween(to) {
