@@ -5,8 +5,8 @@ var padding = { top: 20, right: 40, bottom: 0, left: 0 };
     var containerHeight = window.innerHeight * 0.7; // 80% da altura da janela
 
     // Ajusta a largura e altura de forma que a roleta se mantenha dentro dos limites da tela
-    var w = Math.min(containerWidth, 700) - padding.left - padding.right;  // Limite de 700px no máximo
-    var h = Math.min(containerWidth, 700) - padding.top - padding.bottom; // Limite de 700px no máximo
+    var w = Math.min(Math.min(containerWidth, 700), Math.min(containerHeight, 700)) - padding.left - padding.right;  // Limite de 700px no máximo
+    var h = Math.min(Math.min(containerWidth, 700), Math.min(containerHeight, 700)) - padding.top - padding.bottom; // Limite de 700px no máximo
     r = Math.min(w, h) / 2,                  // Calculando o raio do círculo da roleta
     rotation = 0,                            // Ângulo de rotação inicial
     oldrotation = 0,                         // Ângulo de rotação anterior
