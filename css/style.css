@@ -180,9 +180,9 @@ text{
 }
 
 
-@media (max-width: 1300px){
+@media (max-width: 1130px){
     .container {
-        /* //gap: 50px; */
+        gap: 50px;
     }
 }
 
@@ -190,5 +190,9 @@ text{
     .container{
         justify-content: space-between;
         align-items: center;
+    }
+
+    #chart{
+        font-size: 18px;
     }
 }
