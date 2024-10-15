@@ -1,7 +1,12 @@
 // Definindo o espaçamento interno e as dimensões da roleta
-var padding = { top: 20, right: 40, bottom: 0, left: 0 },
-    w = 700 - padding.left - padding.right,  // Largura do SVG menos o padding
-    h = 700 - padding.top - padding.bottom,  // Altura do SVG menos o padding
+var padding = { top: 20, right: 40, bottom: 0, left: 0 };
+    // Definindo largura e altura baseados no tamanho da janela ou container
+    var containerWidth = window.innerWidth * 0.6;  // 80% da largura da janela
+    var containerHeight = window.innerHeight * 0.7; // 80% da altura da janela
+
+    // Ajusta a largura e altura de forma que a roleta se mantenha dentro dos limites da tela
+    var w = Math.min(containerWidth, 700) - padding.left - padding.right;  // Limite de 700px no máximo
+    var h = Math.min(containerWidth, 700) - padding.top - padding.bottom; // Limite de 700px no máximo
     r = Math.min(w, h) / 2,                  // Calculando o raio do círculo da roleta
     rotation = 0,                            // Ângulo de rotação inicial
     oldrotation = 0,                         // Ângulo de rotação anterior
