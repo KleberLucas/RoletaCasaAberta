@@ -95,6 +95,14 @@ text{
     flex-shrink: 3;
 }
 
+#copyright{
+    position: absolute;
+    bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
 #img-casa-aberta{
     width: 500px;
 }
