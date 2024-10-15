@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 300px;
+    gap: 200px;
 }
 
 text{
@@ -104,7 +104,7 @@ text{
 }
 
 #img-casa-aberta{
-    width: 500px;
+    width: 30vw;
 }
 
 #chart {
