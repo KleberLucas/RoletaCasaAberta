@@ -105,6 +105,7 @@ text{
 
 #img-casa-aberta{
     width: 30vw;
+    max-width: 500px;
 }
 
 #chart {
