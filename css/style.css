@@ -119,6 +119,7 @@ text{
     position: absolute;
     top: 5%;
     margin-bottom: 100px;
+    z-index: 50;
 } 
 
 #question h1 {
